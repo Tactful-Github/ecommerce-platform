@@ -16,7 +16,7 @@ A full-stack e-commerce platform built with **Next.js 16**, **TypeScript**, **Pr
 - **Product browsing** with category filtering, search, and sorting
 - **Product detail pages** with related product suggestions
 - **Shopping cart** powered by Zustand with localStorage persistence
-- **Stock enforcement** — prevents adding more items than available and shows real-time notifications
+- **Stock enforcement** prevents adding more items than available and shows real-time notifications
 - **Responsive design** optimized for desktop and mobile
 
 ### Authentication & Accounts
@@ -61,7 +61,7 @@ A full-stack e-commerce platform built with **Next.js 16**, **TypeScript**, **Pr
 
 - **Node.js** 18+ (recommended: 20+)
 - **npm** 9+
-- A **Stripe** account (free test mode works) — [stripe.com](https://stripe.com)
+- A **Stripe** account (free test mode works) [stripe.com](https://stripe.com)
 
 ---
 
@@ -91,19 +91,18 @@ cp .env.example .env
 Edit `.env` with your credentials:
 
 ```env
-# Database (SQLite — works out of the box)
+
 DATABASE_URL="file:./dev.db"
 
-# NextAuth — generate a secret with: openssl rand -base64 32
+
 AUTH_SECRET="your-generated-secret"
 AUTH_URL="http://localhost:3000"
 
-# Stripe — get these from https://dashboard.stripe.com/test/apikeys
 STRIPE_SECRET_KEY="sk_test_..."
 STRIPE_WEBHOOK_SECRET="whsec_..."
 NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY="pk_test_..."
 
-# App URL
+
 NEXT_PUBLIC_APP_URL="http://localhost:3000"
 ```
 
