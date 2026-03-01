@@ -1,4 +1,4 @@
-# STORE — Premium E-Commerce Platform
+# STORE - Premium E-Commerce Platform
 
 A full-stack e-commerce platform built with **Next.js 16**, **TypeScript**, **Prisma**, **Stripe**, and **Tailwind CSS**. Designed as a production-ready showcase with a clean, minimal aesthetic featuring a beige-and-green color palette.
 
@@ -191,7 +191,7 @@ Copy the webhook signing secret (`whsec_...`) output by the CLI into your `.env`
 ## Purchase Flow
 
 1. Customer browses products and adds items to cart (stock limits enforced)
-2. Customer clicks **Checkout** — the app creates a Stripe Checkout Session via `/api/checkout`
+2. Customer clicks **Checkout** the app creates a Stripe Checkout Session via `/api/checkout`
 3. Customer completes payment on Stripe's hosted checkout page
 4. Stripe fires a `checkout.session.completed` webhook to `/api/webhook`
 5. The webhook handler creates an `Order` record, links `OrderItem` entries, and decrements product stock
